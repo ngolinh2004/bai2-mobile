@@ -29,10 +29,15 @@
   <img width="404" height="69" alt="{8BD1126A-694F-4DEF-A517-D4BB6DA8553E}" src="https://github.com/user-attachments/assets/649d32df-bfed-42f1-acc2-953beb33bdb3" />
 
   
-8. Chạy hệ thống
 9. Giao diện Template HTML
-10. Django Admin
+
+    <img width="667" height="185" alt="{4A5009C0-B01E-4790-9548-D740E9DB4A74}" src="https://github.com/user-attachments/assets/2055beb4-df95-4303-a13b-b5ef9bf71150" />
+
+    <img width="836" height="392" alt="{EBABCAE5-863C-4800-9D01-1EF1475B2055}" src="https://github.com/user-attachments/assets/a1dec512-ddee-4e99-92b9-9f34037adfcf" />
+
+
+11. Django Admin
     
     <img width="162" height="35" alt="{194FFB95-1FE3-4279-A6BD-8B11FFFFD33E}" src="https://github.com/user-attachments/assets/e5088f25-e04e-441f-9081-7ee9c10c0137" />
 
-11. Cloudflare Tunnel
+12. Cloudflare Tunnel
