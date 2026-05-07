@@ -25,13 +25,14 @@
    <img width="308" height="94" alt="{13BEA5DE-F11F-491D-A246-23BA2093AED7}" src="https://github.com/user-attachments/assets/bbf3dc27-71db-461f-82ae-3dfb3782f4ff" />
 
 6. Cài đặt và chạy hệ thống
+   
+  <img width="404" height="69" alt="{8BD1126A-694F-4DEF-A517-D4BB6DA8553E}" src="https://github.com/user-attachments/assets/649d32df-bfed-42f1-acc2-953beb33bdb3" />
 
-    <img width="501" height="87" alt="{AAFBF5E7-F92B-4B32-8611-55F6D8429313}" src="https://github.com/user-attachments/assets/d4b7e3a5-faf1-4332-89f6-53fe2fdfe94a" />
-
-7. Chạy hệ thống
-8. Giao diện Template HTML
-9. Django Admin
+  
+8. Chạy hệ thống
+9. Giao diện Template HTML
+10. Django Admin
     
     <img width="162" height="35" alt="{194FFB95-1FE3-4279-A6BD-8B11FFFFD33E}" src="https://github.com/user-attachments/assets/e5088f25-e04e-441f-9081-7ee9c10c0137" />
 
-10. Cloudflare Tunnel
+11. Cloudflare Tunnel
