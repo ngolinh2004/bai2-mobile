@@ -168,8 +168,15 @@ http://127.0.0.1:8000
 
   <img width="960" height="540" alt="{B398FB9A-0ACB-472C-A3C6-0CDB09C0B92C}" src="https://github.com/user-attachments/assets/3c638517-962f-4864-996e-9122612d5d41" />
 
-- Kiểm tra dữ liệu bằng phpMyAdmin
   <img width="960" height="540" alt="{AD9F10E5-78FC-4B22-A6F9-73DDBAC0BBD3}" src="https://github.com/user-attachments/assets/4fa4f900-e089-48bd-8dd5-a1522ca92b3a" />
 
+- Kiểm tra dữ liệu bằng phpMyAdmin
+
+  <img width="817" height="457" alt="{2EB13B6D-CC9A-436A-ACC0-9F8E0D0562C7}" src="https://github.com/user-attachments/assets/10c62ea3-37fe-4017-850b-b3c2436f8a99" />
+
+  <img width="836" height="454" alt="{8C8B2525-688F-4013-9623-D13B147BE774}" src="https://github.com/user-attachments/assets/55ee9699-ef70-4ec8-abef-2eccb1d14c8a" />
+
+
+- Public website bằng Cloudflare Tunnel > - đã có container: cloudflared nên giờ chỉ cần cấu hình tunnel. > - Kiểm tra cloudflared đang chạy: docker logs cloudflared
 
    
