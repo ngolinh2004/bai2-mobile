@@ -155,7 +155,7 @@ nano django_app/config/urls.py
 - Mở trình duyệt:
 http://127.0.0.1:8000
 
-<img width="477" height="540" alt="{FD458206-510B-4F64-9034-F919833AD73F}" src="https://github.com/user-attachments/assets/2cddc470-439e-4f8a-a24b-bd8bb849d94c" />
+
 
 - kiểm tra FK bằng PhpMyAdmin
 
