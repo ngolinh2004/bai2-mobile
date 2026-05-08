@@ -155,4 +155,10 @@ http://127.0.0.1:8000
 
 <img width="477" height="540" alt="{FD458206-510B-4F64-9034-F919833AD73F}" src="https://github.com/user-attachments/assets/2cddc470-439e-4f8a-a24b-bd8bb849d94c" />
 
+- kiểm tra FK bằng PhpMyAdmin
+  - Thêm khách hàng
+    
+  <img width="960" height="540" alt="{DACA44BC-AACD-4D9C-ABAF-72CADB59F110}" src="https://github.com/user-attachments/assets/c2071c2c-0c47-445b-a1f3-3ed2305d90c5" />
 
+  - Thêm tài sản
+   
