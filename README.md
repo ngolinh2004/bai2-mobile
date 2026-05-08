@@ -135,48 +135,32 @@ mkdir -p django_app/pawnshop/templates
 Tạo file home.html
 nano django_app/pawnshop/templates/home.html
 
-<img width="479" height="540" alt="{6503EFF8-0261-4E40-9070-6A80FC7B0B03}" src="https://github.com/user-attachments/assets/458fc5e1-2866-4d02-b276-de6e3f9b77e1" />
+<img width="465" height="337" alt="{13449C89-82F3-4B84-9CC6-815754081D10}" src="https://github.com/user-attachments/assets/d0c155a8-88b1-4046-9d31-f46e3a330f51" />
 
 - Mở views.py
 nano django_app/pawnshop/views.py
 
-<img width="477" height="540" alt="{1DAAE9C7-9821-4F32-BD8A-3AE3BEDADEEF}" src="https://github.com/user-attachments/assets/7ec52ac7-c2a4-4bd3-a8c4-9ec39ae648c4" />
+<img width="481" height="324" alt="{22DDB5DC-57DC-4EF8-A6C0-74C9A1D622F1}" src="https://github.com/user-attachments/assets/2cb97a27-922b-4540-bd23-cf6b9481d34d" />
 
 - Tạo urls.py cho app
-nano django_app/pawnshop/urls.
-
-<img width="477" height="540" alt="{E91BD65E-6F2C-4705-91BD-4EF8AA2D26CC}" src="https://github.com/user-attachments/assets/f26ddbc7-36fd-496c-83c4-fa9370999f50" />
-
-- Mở url project
 nano django_app/config/urls.py
 
-<img width="479" height="540" alt="{13CF1716-D802-4C1F-804C-CDD676136EE5}" src="https://github.com/user-attachments/assets/557642c3-b4e4-4aea-9570-45c0ea495e16" />
+<img width="339" height="147" alt="{81AA0D4D-5AB6-4144-9B2D-631A1D0A3479}" src="https://github.com/user-attachments/assets/606b60f3-3a0f-4311-af96-9205fa66bd47" />
+
 
 - Mở trình duyệt:
 http://127.0.0.1:8000
 
+<img width="480" height="263" alt="{1F1C2DBA-D577-467F-9F96-64A0C6E4A281}" src="https://github.com/user-attachments/assets/2a93c7bf-87af-454b-8893-7da68de85615" />
 
-
-- kiểm tra FK bằng PhpMyAdmin
-
-
-  <img width="857" height="483" alt="{B6B290E8-9A33-4A4F-BDBE-D5F3A12C6430}" src="https://github.com/user-attachments/assets/5f9ccba5-4e30-4120-a6e6-addbf47fd49b" />
-
-  - Thêm khách hàng
-    
-  <img width="960" height="540" alt="{DACA44BC-AACD-4D9C-ABAF-72CADB59F110}" src="https://github.com/user-attachments/assets/c2071c2c-0c47-445b-a1f3-3ed2305d90c5" />
-
-  - Thêm tài sản
-
-  <img width="960" height="540" alt="{B398FB9A-0ACB-472C-A3C6-0CDB09C0B92C}" src="https://github.com/user-attachments/assets/3c638517-962f-4864-996e-9122612d5d41" />
-
-  <img width="960" height="540" alt="{AD9F10E5-78FC-4B22-A6F9-73DDBAC0BBD3}" src="https://github.com/user-attachments/assets/4fa4f900-e089-48bd-8dd5-a1522ca92b3a" />
 
 - Kiểm tra dữ liệu bằng phpMyAdmin
+  
+<img width="478" height="383" alt="{796170A5-A911-453D-9B67-4C1BD65A7BF7}" src="https://github.com/user-attachments/assets/2298fe74-40ea-4bc4-84d7-b79bf1ab3d2a" />
 
-  <img width="817" height="457" alt="{2EB13B6D-CC9A-436A-ACC0-9F8E0D0562C7}" src="https://github.com/user-attachments/assets/10c62ea3-37fe-4017-850b-b3c2436f8a99" />
+<img width="960" height="540" alt="{6F3335C0-2542-4163-98F6-AC7982A5B511}" src="https://github.com/user-attachments/assets/02690c22-6f66-48d2-bcfe-1beb9d0693b1" />
 
-  <img width="836" height="454" alt="{8C8B2525-688F-4013-9623-D13B147BE774}" src="https://github.com/user-attachments/assets/55ee9699-ef70-4ec8-abef-2eccb1d14c8a" />
+<img width="960" height="540" alt="{09A3D32B-F74F-4112-8D53-8024A8E8C2A6}" src="https://github.com/user-attachments/assets/142550c9-8f43-43de-a10c-f75d043446f3" />
 
 
 - Public website bằng Cloudflare Tunnel > - đã có container: cloudflared nên giờ chỉ cần cấu hình tunnel. > - Kiểm tra cloudflared đang chạy: docker logs cloudflared
