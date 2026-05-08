@@ -26,4 +26,106 @@ Hướng dẫn:
 - AI sẽ nói cần thêm file requirements.txt để cài các thư viện cho python (cài qua lệnh pip) => tạo file requirements.txt với nội dung tưng ứng, trong file này cũng comment được => comment xem thư viện nào dùng để làm gì
 - Sau mỗi lần sửa đỏi có thể phải chạy lệnh dạng : **docker compose exec TÊN_SERVICE_DJANGO_CỦA_BẠN python manage.py migrate** để tác động vào django (còn nhiều lệnh khác chứ ko luôn như này), để django thay đổi csdl hoặc thay đổi cấu hình.
 
-  
+
+## BÀI LÀM
+# 1.TỔ CHỨC CSDL CHO HỆ THỐNG QUẢN LÝ TIỆM CẦM ĐỒ: viết tay ra giấy, lấy điện thoại chụp lại, upload ảnh lên github (đã nói về các nghiệp vụ trên lớp, ghi bảng)
+
+# 2. 
+- Cài Ubuntu + Docker
+Trong Ubuntu chạy:
+sudo apt update
+sudo apt install docker.io docker-compose -y
+<img width="960" height="540" alt="{497B3343-ECD1-4203-A656-B31B03AEB460}" src="https://github.com/user-attachments/assets/a129a35a-aad0-4f9a-b496-a2f41486361f" />
+
+- cài docker compose
+<img width="347" height="317" alt="{F689C15A-6817-483D-B231-3B8F65CB5F23}" src="https://github.com/user-attachments/assets/a3347ceb-1349-4d18-9bcf-e98e18048df3" />
+
+- Tạo thư mục chính
+Gõ:
+mkdir tiemcamdo
+cd tiemcamdo
+<img width="332" height="84" alt="{E43AE482-92AA-4CDB-ACA9-D59F7F053D97}" src="https://github.com/user-attachments/assets/5671073f-d013-4e9c-873e-bed1418676f7" />
+
+- TẠO THƯ MỤC DJANGO
+   > - Tạo thư mục chứa Django
+   > - mkdir django_app
+<img width="347" height="63" alt="{C6BC4BA8-7352-4E01-9756-B1F0E1B35F0B}" src="https://github.com/user-attachments/assets/1741f61c-2d32-4dcf-8c1f-c16965ede050" />
+
+- Đi vào django_app
+cd django_app
+
+-TẠO FILE Dockerfile
+   > - Tạo file Dockerfile
+nano Dockerfile
+<img width="371" height="478" alt="{25FA767B-775F-4124-B82E-A8BFC39D3463}" src="https://github.com/user-attachments/assets/1abb03c1-36af-4b7c-a1ed-0e3db3f061f5" />
+
+- TẠO requirements.txt
+   > - Tạo file: nano requirements.txt
+<img width="378" height="470" alt="{AB7D99CA-8CBE-4ADC-B08D-F7B262AA3E3D}" src="https://github.com/user-attachments/assets/08c02125-4d00-4160-92e3-4eee580b2694" />
+
+- Kiểm tra thư mục
+<img width="353" height="56" alt="{38A7E2FC-4571-4D53-9816-22EF78191492}" src="https://github.com/user-attachments/assets/ad56b3e3-3139-46ce-ba30-06311b684703" />
+
+- TẠO docker-compose.yml
+Tạo file
+nano docker-compose.yml
+<img width="375" height="472" alt="{6C373DE9-C365-49D6-BDF4-A5D555E8D712}" src="https://github.com/user-attachments/assets/0aa2ea80-6f25-4648-95f4-15a2e4e4607e" />
+
+
+- BUILD DOCKER
+Chạy docker compose
+docker compose up -d --build
+<img width="960" height="540" alt="{7051DF08-8261-419B-8EA1-E065D1E63D64}" src="https://github.com/user-attachments/assets/11c54696-6840-4365-a336-cbed7f6059c7" />
+
+- TẠO DJANGO PROJECT
+docker compose exec django django-admin startproject config .
+- Tạo app
+docker compose exec django python manage.py startapp pawnshop
+<img width="960" height="540" alt="{2951DBAE-9B6C-41C2-A0B3-2FBD65AB6875}" src="https://github.com/user-attachments/assets/c5aab516-91a5-4030-b455-7ac1019a6b31" />
+
+- Mở file settings.py
+Chạy: nano django_app/config/settings.py
+- tìm đoạn:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+
+}sửa thành như trong ảnh
+<img width="297" height="175" alt="{5E6BA730-6EE2-4818-8DF5-C42BBFA0CC84}" src="https://github.com/user-attachments/assets/f03d623d-bb65-4ae2-ad9e-fa7e73f552fe" />
+
+- Tạo models
+Mở: nano django_app/pawnshop/models.py
+<img width="375" height="471" alt="{2B2A00D5-1B03-430B-AC13-5DB3D00FD3B7}" src="https://github.com/user-attachments/assets/e092cc7b-8c0f-4ba5-97cb-335994b7e2a0" />
+
+- Chạy migration
+docker compose exec django python manage.py makemigrations
+- Migrate database
+docker compose exec django python manage.py migrate
+
+<img width="960" height="540" alt="{4F115C5D-41FB-42FD-9EA2-626C1304EFC0}" src="https://github.com/user-attachments/assets/a79b19c5-9ae8-417d-9b0d-c6eb7e22d07a" />
+
+
+- Tạo tài khoản admin
+docker compose exec django python manage.py createsuperuser
+
+<img width="346" height="139" alt="{6FC71963-6FF8-4D70-B0AD-60F012F7FC05}" src="https://github.com/user-attachments/assets/9d2e2afc-3df6-4cc1-a4c2-8205c390d44d" />
+
+- Cho admin quản lý bảng
+Mở: nano django_app/pawnshop/admin.py
+
+<img width="472" height="540" alt="{ED443D51-E6E7-46F2-A4C0-E747BAC8A6DD}" src="https://github.com/user-attachments/assets/bdc5f836-1d85-405e-baac-cbd5e8a656cd" />
+
+- Chạy Django
+   > - docker compose down
+   > - docker compose up -d --build
+
+- Test web
+Mở trình duyệt Ubuntu: http://localhost:8000
+- hoặc : http://127.0.0.1:8000/admin
+
+<img width="379" height="490" alt="{CF50E381-659E-49C3-8A67-D78F88BD9F1E}" src="https://github.com/user-attachments/assets/62e8c271-b748-4662-9521-23e5f454813a" />
+
+
+
