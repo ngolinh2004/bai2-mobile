@@ -1,43 +1,29 @@
+# Môn: Phát triển ứng dụng với mã nguồn mở-TEE0421
+
+Lớp: 58KTPM
+
+**Bài tập 02:** 
+# SỬ DỤNG DJANGO ĐỂ TẠO WEB QUẢN LÝ TIỆM CẦM ĐỒ
+## deadline : 23h59 ngày 09 tháng 5 năm 2026.
+
+
 1. TỔ CHỨC CSDL CHO HỆ THỐNG QUẢN LÝ TIỆM CẦM ĐỒ: viết tay ra giấy, lấy điện thoại chụp lại, upload ảnh lên github (đã nói về các nghiệp vụ trên lớp, ghi bảng)
-
-2. SỬ DỤNG DOCKER TRÊN UBUNTU ĐỂ:
-
-- Mariadb : chứa csdl của hệ thống này
+   
+2. SỬ DỤNG DOCKER TRÊN UBUNTU ĐỂ: 
+- Mariadb  : chứa csdl của hệ thống này
 - Phpmyadmin: để soi được csdl (chỉ để xem, ko cần tạo bảng từ đây, django sẽ làm hết)
 - Django: build 1 docker container (dùng Dockerfile): trên nền python, sử dụng django, nhớ mount thư mục để dễ edit, edit dùng: sudo nano ten_file
 
-<img width="313" height="24" alt="{00AD535C-DE32-4A6B-A8C6-63D4A038837B}" src="https://github.com/user-attachments/assets/31bb8605-1fe2-4089-8a55-5490d145c911" 
+sau khi có 3 service này trong file docker-compose.yml :
+- run nó, cấu hình để Django nhận csdl mariadb (sửa file settings.py), cấu hình user login ban đầu, mô tả các bảng trong models.py, .... (đc phép sử dụng AI để làm) => KQ được trang admin, y/c đăng nhập, vào trang admin: cho phép thêm sửa xoá dữ liệu các bảng. các trường là khoá ngoại chỉ việc chọn text (mặc dù là csdl tại trường FK đó lưu ID của PK mà nó tham chiếu : sử dụng phpmyadmin để kiểm chứng)
+- chú ý kết hợp ssh để chạy lệnh tác động vào django và sudo nano để edit file.
+- sử dụng template (file html, sử dụng cú pháp jinja2), lấy context từ 1 view home_page, để tạo trang liệt kê các con nợ đến hạn mà chưa trả tiền!
+- sử dụng cloudflare tunnel để public kết quả lên 1 sub-domain => chụp kết quả
 
-3. Docker Compose
-
-   <img width="494" height="274" alt="{804097CD-0213-43DB-960E-C592178466AF}" src="https://github.com/user-attachments/assets/9c60f4a3-e72d-44dd-9797-b0c339bf9e8d" />
-
-
-4. Dockerfile
-
-   <img width="416" height="57" alt="{95951C54-70EE-40C8-8306-48E2EF146F90}" src="https://github.com/user-attachments/assets/0151e5df-7dc9-4e49-891d-89aa68ce5232" />
-
-
-   <img width="420" height="258" alt="{8573E062-C1F2-435B-BBC2-CF1D727152FA}" src="https://github.com/user-attachments/assets/98582918-dd74-4ad4-a8b6-9cd438d47002" />
-
-5. requirements.txt
-
-   <img width="308" height="94" alt="{13BEA5DE-F11F-491D-A246-23BA2093AED7}" src="https://github.com/user-attachments/assets/bbf3dc27-71db-461f-82ae-3dfb3782f4ff" />
-
-6. Cài đặt và chạy hệ thống
-   
-  <img width="404" height="69" alt="{8BD1126A-694F-4DEF-A517-D4BB6DA8553E}" src="https://github.com/user-attachments/assets/649d32df-bfed-42f1-acc2-953beb33bdb3" />
+Hướng dẫn:
+- Tạo thư mục để chứa image tự buid cho django
+- Vào thư mục đó tạo file tên: Dockerfile (nội dung hỏi AI xem file này cần có nội dung gì, full comment cho từng dòng lệnh trong file này => mục tiêu kép: để hiểu và để hệ thống chạy được)
+- AI sẽ nói cần thêm file requirements.txt để cài các thư viện cho python (cài qua lệnh pip) => tạo file requirements.txt với nội dung tưng ứng, trong file này cũng comment được => comment xem thư viện nào dùng để làm gì
+- Sau mỗi lần sửa đỏi có thể phải chạy lệnh dạng : **docker compose exec TÊN_SERVICE_DJANGO_CỦA_BẠN python manage.py migrate** để tác động vào django (còn nhiều lệnh khác chứ ko luôn như này), để django thay đổi csdl hoặc thay đổi cấu hình.
 
   
-9. Giao diện Template HTML
-
-    <img width="667" height="185" alt="{4A5009C0-B01E-4790-9548-D740E9DB4A74}" src="https://github.com/user-attachments/assets/2055beb4-df95-4303-a13b-b5ef9bf71150" />
-
-    <img width="836" height="392" alt="{EBABCAE5-863C-4800-9D01-1EF1475B2055}" src="https://github.com/user-attachments/assets/a1dec512-ddee-4e99-92b9-9f34037adfcf" />
-
-
-11. Django Admin
-    
-    <img width="162" height="35" alt="{194FFB95-1FE3-4279-A6BD-8B11FFFFD33E}" src="https://github.com/user-attachments/assets/e5088f25-e04e-441f-9081-7ee9c10c0137" />
-
-12. Cloudflare Tunnel
