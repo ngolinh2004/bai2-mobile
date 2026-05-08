@@ -164,4 +164,8 @@ http://127.0.0.1:8000
 
   <img width="960" height="540" alt="{B398FB9A-0ACB-472C-A3C6-0CDB09C0B92C}" src="https://github.com/user-attachments/assets/3c638517-962f-4864-996e-9122612d5d41" />
 
+
+  <img width="960" height="540" alt="{AD9F10E5-78FC-4B22-A6F9-73DDBAC0BBD3}" src="https://github.com/user-attachments/assets/4fa4f900-e089-48bd-8dd5-a1522ca92b3a" />
+
+
    
