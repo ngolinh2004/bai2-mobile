@@ -127,5 +127,32 @@ Mở trình duyệt Ubuntu: http://localhost:8000
 
 <img width="379" height="490" alt="{CF50E381-659E-49C3-8A67-D78F88BD9F1E}" src="https://github.com/user-attachments/assets/62e8c271-b748-4662-9521-23e5f454813a" />
 
+- Tạo thư mục templates
+Mở terminal Ubuntu:
+mkdir -p django_app/pawnshop/templates
+Tạo file home.html
+nano django_app/pawnshop/templates/home.html
+
+<img width="479" height="540" alt="{6503EFF8-0261-4E40-9070-6A80FC7B0B03}" src="https://github.com/user-attachments/assets/458fc5e1-2866-4d02-b276-de6e3f9b77e1" />
+
+- Mở views.py
+nano django_app/pawnshop/views.py
+
+<img width="477" height="540" alt="{1DAAE9C7-9821-4F32-BD8A-3AE3BEDADEEF}" src="https://github.com/user-attachments/assets/7ec52ac7-c2a4-4bd3-a8c4-9ec39ae648c4" />
+
+- Tạo urls.py cho app
+nano django_app/pawnshop/urls.
+
+<img width="477" height="540" alt="{E91BD65E-6F2C-4705-91BD-4EF8AA2D26CC}" src="https://github.com/user-attachments/assets/f26ddbc7-36fd-496c-83c4-fa9370999f50" />
+
+- Mở url project
+nano django_app/config/urls.py
+
+<img width="479" height="540" alt="{13CF1716-D802-4C1F-804C-CDD676136EE5}" src="https://github.com/user-attachments/assets/557642c3-b4e4-4aea-9570-45c0ea495e16" />
+
+- Mở trình duyệt:
+http://127.0.0.1:8000
+
+<img width="477" height="540" alt="{FD458206-510B-4F64-9034-F919833AD73F}" src="https://github.com/user-attachments/assets/2cddc470-439e-4f8a-a24b-bd8bb849d94c" />
 
 
