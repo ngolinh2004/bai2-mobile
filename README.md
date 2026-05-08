@@ -93,7 +93,9 @@ DATABASES = {
     }
 
 }sửa thành như trong ảnh
-<img width="297" height="175" alt="{5E6BA730-6EE2-4818-8DF5-C42BBFA0CC84}" src="https://github.com/user-attachments/assets/f03d623d-bb65-4ae2-ad9e-fa7e73f552fe" />
+
+<img width="348" height="149" alt="{B6D92F3F-3A27-47D8-8194-84917D97C333}" src="https://github.com/user-attachments/assets/4bc2156e-f4b8-4563-a8cf-98e6c819b46c" />
+
 
 - Tạo models
 Mở: nano django_app/pawnshop/models.py
