@@ -30,7 +30,12 @@ Hướng dẫn:
 ## BÀI LÀM
 # 1.TỔ CHỨC CSDL CHO HỆ THỐNG QUẢN LÝ TIỆM CẦM ĐỒ: viết tay ra giấy, lấy điện thoại chụp lại, upload ảnh lên github (đã nói về các nghiệp vụ trên lớp, ghi bảng)
 
+ <img width="1024" height="576" alt="image" src="https://github.com/user-attachments/assets/d0a6a85e-8b13-4e31-886b-2f16faba359e" />
+ 
+<img width="1920" height="2560" alt="image" src="https://github.com/user-attachments/assets/a90c17ef-68f6-45a7-8f2a-22a98b7fe521" />
+
 # 2. 
+
 - Cài Ubuntu + Docker
 Trong Ubuntu chạy:
 sudo apt update
@@ -166,5 +171,8 @@ http://127.0.0.1:8000
 - Public website bằng Cloudflare Tunnel > - đã có container: cloudflared nên giờ chỉ cần cấu hình tunnel. > - Kiểm tra cloudflared đang chạy: docker logs cloudflared
   
 <img width="598" height="407" alt="{FDEEC971-F024-46DF-99DC-CEDA41C1551B}" src="https://github.com/user-attachments/assets/15fe15c4-6ccf-4761-86f0-44c0a94ab7e1" />
+
+<img width="1920" height="2560" alt="image" src="https://github.com/user-attachments/assets/5885a9e7-074b-4154-ab54-fd66a0753a0a" />
+
 
    
