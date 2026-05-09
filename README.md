@@ -174,6 +174,5 @@ http://127.0.0.1:8000
 
 - Test : http://camdo.ngolinh.id.vn/
   
-<img width="1024" height="576" alt="image" src="https://github.com/user-attachments/assets/9fe325a5-fd4d-46fe-9fc1-9294913d961c" />
+<img width="1024" height="576" alt="image" src="https://github.com/user-attachments/assets/4cb1917e-4432-4896-871a-7d70aba28eda" />
 
- 
