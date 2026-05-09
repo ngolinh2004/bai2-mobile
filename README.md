@@ -169,8 +169,7 @@ http://127.0.0.1:8000
 
 
 - Public website bằng Cloudflare Tunnel > - đã có container: cloudflared nên giờ chỉ cần cấu hình tunnel. > - Kiểm tra cloudflared đang chạy: docker logs cloudflared
-  
-<img width="598" height="407" alt="{FDEEC971-F024-46DF-99DC-CEDA41C1551B}" src="https://github.com/user-attachments/assets/15fe15c4-6ccf-4761-86f0-44c0a94ab7e1" />
+
 
 - Test : http://camdo.ngolinh.id.vn/
   
